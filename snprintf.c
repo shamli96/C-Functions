@@ -3,9 +3,11 @@
 
 int main()
 {
-	char *src="Hello";
+	char *src="Hello World!!!";
 	char dest[6];
-	snprintf(dest,4,"%s",src);
+	size_t size;
+	size=snprintf(dest,6,"%s",src);
 	printf("%s\n",dest);
+	printf("Size of the string is :%zd\n",size);
 	return 0;
 }
