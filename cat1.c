@@ -9,8 +9,7 @@ int main()
 	char str2[ ] = "World !!! "; //initialize str2
 	char str3[ 5 ] = ""; //initialize str3 to empty
 
-	printf("str1 = %s\n\n"
-			"str2 = %s\n\n", str1, str2);
+	printf("str1 = %s\n str2 = %s\n", str1, str2);
 
 	//concatenate str2 to str1
 	printf("strcat(str1, str2) = %s and str1 has stored = %zd bytes\n", strcat(str1, str2),strlen(str1));  //gives an undefined output

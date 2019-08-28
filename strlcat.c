@@ -9,8 +9,10 @@ int main()
 	size_t len;
 
 	len=strlcat(buf, somestring, sizeof(buf)) ;
-	if (len >= sizeof(buf))
+	if (len >= sizeof(buf)){
 		printf("somestring was truncated, when concatenating to buf.\n");
+		printf("String stored is :%s\n",buf);
+	}	
 	else
 		printf("String is concatenated properly. Resultant string is :%s\n",buf);
 	printf("strlcat has returned = %zd bytes\n",len);
